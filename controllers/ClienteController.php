@@ -8,7 +8,7 @@ class ClienteController {
     private $db;
     private $cliente;
 
-    public function __construct() {
+    public function _construct() {
         $this->db = (new Database()) ->getConnection();
         $this->cliente = new Cliente($this->db);
     }
